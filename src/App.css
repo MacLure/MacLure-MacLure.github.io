@@ -1,4 +1,12 @@
-.App {
+li {
+  list-style-type: none;
+  display: inline-block;
+  cursor:pointer;
+}
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -30,4 +38,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
