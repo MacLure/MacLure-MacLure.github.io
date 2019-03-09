@@ -15,41 +15,9 @@ li {
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
+  background-color: rgb(35, 35, 41);
 }
 
-.projectsContainer{
-  margin: 90px 30px 0 30px;
-}
-.projectGrid{
-  margin-bottom: 30px;
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-}
-.projectGrid>div{
-  padding: 10px;
-}
-.projectScreenCapCell{
-  /* background-color: white; */
-  text-align: center;
-}
-.projectDescCell{
-  background-color: white;
-}
-.projectTechIcon {
-  width: 25px;
-  margin: 5px;
-}
-.projectTechIconWide {
-  width: 70px;
-  margin: 5px;
-}
-.projectTitle {
-font-size: 3em;
-}
-.projectDesc {
-  font-size: 2em;
-  color: rgba(0, 0, 0, 0.4)
-}
 .projectLink{
   display: inline-block;
   margin: 0 5px;
@@ -63,9 +31,7 @@ font-size: 3em;
   background-color: black;
   transition: background-color 0.2s;
 }
-.projectScreenCap {
-  width: 80%;
-}
+
 
 
 .fade-enter {

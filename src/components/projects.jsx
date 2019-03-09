@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Project from './project'
+
 import html5 from './../assets/icons/html5.svg';
 import css3 from './../assets/icons/css3.svg';
 import js from './../assets/icons/js.svg';
@@ -8,8 +10,10 @@ import redux from './../assets/icons/redux.svg';
 import ruby from './../assets/icons/ruby.svg';
 import rails from './../assets/icons/rails.svg';
 import postgres from './../assets/icons/postgres.svg';
+
 import horizonScreenCap from './../assets/images/horizon_screencap.png';
-import Project from './project'
+import reserveItScreenCap from './../assets/images/reserveIt_screencap.png';
+
 
 
 class Projects extends Component {
@@ -29,7 +33,7 @@ class Projects extends Component {
         desc: "Restaurant booking app",
         summary: "Reserve-It lets users make reservations at restaurants, and restaurant owners to keep track of their reservations. The app was built with responsiveness in mind, so it is easy to use for mobile, tablet, and desktop/laptop users.",
         tech: [html5, css3, js, sass, ruby, rails, postgres],
-        screenCap: '',
+        screenCap: reserveItScreenCap,
         liveURL: 'https://project-reserve-it.herokuapp.com/',
         gitHubURL: 'https://github.com/BenjaminHoppe/reserveit',
 
@@ -40,7 +44,7 @@ class Projects extends Component {
   render() { 
     return (
       <div style={styles.fill}>
-        <div className="projectsContainer">
+        <div style={styles.projectsContainer}>
           {this.state.projects.map(project => <Project project = {project} /> )}
         </div>
       </div>
@@ -57,4 +61,8 @@ styles.fill={
   backgroundColor: 'rgb(255,230, 60)',
   width: '100vw',
   minHeight: '100vh',
+}
+
+styles.projectsContainer = {
+  margin: '90px 30px 0 30px'
 }
