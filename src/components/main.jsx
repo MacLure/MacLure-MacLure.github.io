@@ -3,8 +3,11 @@ import React, { Component } from 'react';
 class Main extends Component {
   state = {  }
   render() { 
-    return ( <div style={styles.fill}>Malcolm MacLure
-      
+    return (
+      <div style={styles.fill}>
+      <div className="projectTitle">Malcolm MacLure</div>
+      <div className="projectDesc">Full-Stack Web Developer</div>
+
       </div> );
   }
 }

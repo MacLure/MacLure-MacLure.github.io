@@ -16,29 +16,37 @@ class Projects extends Component {
   render() { 
     return (
       <div style={styles.fill}>
-        <div class="projectTitle">Horizon</div>
-        <div class="projectDesc">Admin and Student dashboards for schools</div>
+        <div className="projectTitle">Horizon</div>
+        <div className="projectDesc">Admin and Student dashboards</div>
         <div>
-          <img class="projectTechIcon" src={html5} />
-          <img class="projectTechIcon" src={css3} />
-          <img class="projectTechIcon" src={js} />
-          <img class="projectTechIcon" src={react} />
-          <img class="projectTechIcon" src={redux} />
-          <img class="projectTechIcon" src={ruby} />
-          <img class="projectTechIconWide" src={rails} />
-          <img class="projectTechIcon" src={postgres} />
+          <img className="projectTechIcon" src={html5} />
+          <img className="projectTechIcon" src={css3} />
+          <img className="projectTechIcon" src={js} />
+          <img className="projectTechIcon" src={react} />
+          <img className="projectTechIcon" src={redux} />
+          <img className="projectTechIcon" src={ruby} />
+          <img className="projectTechIconWide" src={rails} />
+          <img className="projectTechIcon" src={postgres} />
         </div>
-        <div class="projectTitle">Reserve-It</div>
-        <div class="projectDesc">Restaurant booking app</div>
         <div>
-          <img class="projectTechIcon" src={html5} />
-          <img class="projectTechIcon" src={css3} />
-          <img class="projectTechIcon" src={js} />
-          <img class="projectTechIcon" src={sass} />
-          <img class="projectTechIcon" src={ruby} />
-          <img class="projectTechIconWide" src={rails} />
-          <img class="projectTechIcon" src={postgres} />
+          <div className="projectLink">visit site</div>
+          <div className="projectLink">view code</div>
         </div>
+        <div className="projectTitle">Reserve-It</div>
+        <div className="projectDesc">Restaurant booking app</div>
+        <div>
+          <img className="projectTechIcon" src={html5} />
+          <img className="projectTechIcon" src={css3} />
+          <img className="projectTechIcon" src={js} />
+          <img className="projectTechIcon" src={sass} />
+          <img className="projectTechIcon" src={ruby} />
+          <img className="projectTechIconWide" src={rails} />
+          <img className="projectTechIcon" src={postgres} />
+        </div>
+        <div>
+          <div className="projectLink">visit site</div>
+          <div className="projectLink">view code</div>
+      </div>
       </div>
     );
   }
@@ -50,7 +58,7 @@ const styles = {}
 
 styles.fill={
   position: 'absolute',
-  backgroundColor: 'rgb(255,230, 60',
+  backgroundColor: 'rgb(255,230, 60)',
   width: '100vw',
   height: '100vh',
 }

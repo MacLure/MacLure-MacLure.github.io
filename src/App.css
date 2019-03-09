@@ -1,3 +1,11 @@
+a {
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+}
+a:hover {
+  color: rgba(0, 0, 0, 1);
+  transition: 0.2s;
+}
 li {
   list-style-type: none;
   display: inline-block;
@@ -23,6 +31,20 @@ font-size: 3em;
 .projectDesc {
   font-size: 2em;
   color: rgba(0, 0, 0, 0.4)
+}
+.projectLink{
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.4);
+  color: rgb(255,230, 60);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.projectLink:hover{
+  background-color: black;
+  transition: background-color 0.2s;
+
 }
 
 .fade-enter {

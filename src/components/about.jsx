@@ -5,8 +5,8 @@ class About extends Component {
   render() { 
     return (
       <div style={styles.fill}>
-        About
-        Hi! I'm a full-stack web developer with a background in international recruitment and project management. I love coding and building things with technology.
+        <div className="projectTitle">My name is Malcolm.</div>
+        <div className="projectDesc">I'm a full-stack web developer with a background in international recruitment and project management.</div> I love coding and building things with technology.
 
         I started learning web development in my previous role, where I wore many hats as the head of a national cultural/education programme between Canada and Japan.
 
