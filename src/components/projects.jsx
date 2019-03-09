@@ -22,8 +22,8 @@ class Projects extends Component {
     projects: [
       {
         name: "Horizon",
-        desc: "Admin and Student dashboards",
-        summary: "Horizon is a web-based student and admin management tool for schools' career program success. It is designed for schools that have an outcomes or careers team who wish to optimize their communication between themselves and with students.  It features personalized dashboards for admins and students, allowing them to create, read, update, and delete information such as events, assignments, submissions, and comments.",
+        desc: "School admin and student portal",
+        summary: "Horizon is a management tool for schools and students. It features different dashboards for two user types and allows CRUD operations to be run to the serverside database.",
         tech: [html5, css3, js, react, redux, ruby, rails, postgres],
         screenCap: horizonScreenCap,
         liveURL: 'https://project-horizon-react.herokuapp.com/',
@@ -67,5 +67,5 @@ styles.fill={
 }
 
 styles.projectsContainer = {
-  margin: '90px 30px 0 30px'
+  margin: '90px 30px 70px 30px'
 }

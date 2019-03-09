@@ -3,27 +3,25 @@ import email from './../assets/icons/email.svg';
 import linkedin from './../assets/icons/linkedin.svg';
 import github from './../assets/icons/github.svg';
 import codepen from './../assets/icons/codepen.svg';
-import { relative } from 'path';
-
 
 class Footer extends Component {
   state = { 
     socialLinks: [
       {
         name: email,
-        url: '',
+        url: 'mailto:malcolm.maclure@gmail.com',
       },
       {
         name: linkedin,
-        url: '',
+        url: 'https://www.linkedin.com/in/malcolmmaclure/',
       },
       {
         name: github,
-        url: '',
+        url: 'https://github.com/MacLure/',
       },
       {
         name: codepen,
-        url: '',
+        url: 'https://codepen.io/MacLure/',
       },
     ]
    }
@@ -36,7 +34,7 @@ class Footer extends Component {
           <div style={styles.footerCopyright}>© Malcolm MacLure</div>
           <div style={styles.footerLinks}>
             {this.state.socialLinks.map(link =>
-              <div className="footerLinkDiv"><img style={styles.footerLink} src={link.name} /></div>
+              <a key={link.name} href={link.url} target={link.name !== email ? 'blank' : ''}><div className="footerLinkDiv"><img style={styles.footerLink} src={link.name} alt={link.name} /></div></a>
             )}
           </div>
         </div>
