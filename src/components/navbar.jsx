@@ -7,9 +7,9 @@ class NavBar extends Component {
     return (
       <div style={styles.nav}>
         <ul style={styles.ul}>
-        <li style={styles.li}><NavLink to="/" style={styles.link}>Home</NavLink></li>
-        <li style={styles.li}><NavLink to="/about" style={styles.link}>About</NavLink></li>
-        <li style={styles.li}><NavLink to="/projects" style={styles.link}>Projects</NavLink></li>
+        <li style={styles.li}><NavLink to="/" className="navLink">Home</NavLink></li>
+        <li style={styles.li}><NavLink to="/about" className="navLink">About</NavLink></li>
+        <li style={styles.li}><NavLink to="/projects" className="navLink">Projects</NavLink></li>
         </ul>
       </div> );
   }
@@ -37,7 +37,4 @@ styles.li= {
   color: "black",
   margin: "0 10px",
   padding: "10px",
-}
-styles.link = {
-  textDecoration: 'none'
 }

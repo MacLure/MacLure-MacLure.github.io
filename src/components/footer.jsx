@@ -57,7 +57,7 @@ export default Footer;
 
   styles.footerCopyright = {
     position: 'absolute',
-    margin: '2px 0 0 20px',
+    margin: '6px 0 0 20px',
     Bottom: '30px',
     color: "rgba(0, 0, 0, 0.4)",
     fontWeight: 400,

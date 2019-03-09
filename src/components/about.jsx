@@ -9,11 +9,11 @@ class About extends Component {
         <div style={styles.aboutParagraphs}>
         I'm a full-stack web developer with a background in international recruitment and project management. I love coding and building things with technology.
         <br /><br />
-        I started learning web development in my previous role, where I wore many hats as the head of a national cultural/education programme between Canada and Japan.
+        I started learning web development in my previous role, where I wore many hats as the <a target="blank" href="http://www.jetprogramme.ca">head of a national cultural/education programme between Canada and Japan.</a>
         <br /><br />
         I began teaching myself to code in my free time before deciding to dive deeper into web development and programming. I am now looking forward to contributing to Toronto's tech industry.
         <br /><br />
-        Send me a message and let's connect!
+        <a href="mailto:malcolm.maclure@gmail.com">Send me a message and let's connect!</a>
         </div>
         <Footer color={bgColor}/>
       </div>
@@ -35,6 +35,13 @@ styles.fill={
 }
 
 styles.aboutParagraphs={
-  margin: '100px auto',
-  width: "500px"
+  margin: '130px auto',
+  maxWidth: "500px",
+  fontSize: '1.2em',
+  lineHeight: '1.4em',
+  letterSpacing: '0.0em',
+}
+
+styles.emphasis = {
+  color: 'rgba(0, 0, 0, 0.4)'
 }

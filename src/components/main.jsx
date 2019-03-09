@@ -9,8 +9,10 @@ class Main extends Component {
   render() { 
     return (
       <div style={styles.fill}>
-        <div className="projectTitle">Malcolm MacLure</div>
-        <div className="projectDesc">Full-Stack Web Developer</div>
+        <div style={styles.mainHeader}>
+          <div style={styles.name} >Malcolm MacLure</div>
+          <div style={styles.title} >Full-Stack Web Developer</div>
+        </div>
         <Footer color={bgColor}/>
       </div> );
   }
@@ -26,4 +28,17 @@ styles.fill={
   backgroundColor: bgColor,
   width: '100vw',
   minHeight: '100vh',
+}
+
+styles.name = {
+  fontSize: '3em',
+  }
+
+styles.title = {
+  fontSize: '2.05em',
+  color: 'rgba(0, 0, 0, 0.4)'
+}
+
+styles.mainHeader = {
+  margin: '50px'
 }
