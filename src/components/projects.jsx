@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Project from './project'
+import Footer from "./footer";
 
 import html5 from './../assets/icons/html5.svg';
 import css3 from './../assets/icons/css3.svg';
@@ -45,8 +46,9 @@ class Projects extends Component {
     return (
       <div style={styles.fill}>
         <div style={styles.projectsContainer}>
-          {this.state.projects.map(project => <Project project = {project} /> )}
+          {this.state.projects.map(project => <Project key={project.name}project={project} /> )}
         </div>
+        <Footer color={bgColor}/>
       </div>
     );
   }
@@ -55,6 +57,7 @@ class Projects extends Component {
 export default Projects;
 
 const styles = {}
+const bgColor = 'rgb(255,230, 60)'
 
 styles.fill={
   position: 'absolute',

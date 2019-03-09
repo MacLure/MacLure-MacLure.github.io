@@ -8,7 +8,7 @@ class Project extends Component {
     return ( 
         <div style={styles.projectGrid}>
           <div style={styles.projectScreenCapCell}>
-            <img style={styles.projectScreenCap} src={screenCap} />
+            <img style={styles.projectScreenCap} src={screenCap} alt={name} />
           </div>
           <div style={styles.projectDescCell}>
             <div style={styles.projectTitle}>{name}</div>
@@ -16,7 +16,7 @@ class Project extends Component {
               <div>{summary}</div>
               <div>
                 {tech.map(tech => 
-                  <img style={styles.projectTechIcon} src={tech} alt={tech.toString()} />
+                  <img key={tech} style={styles.projectTechIcon} src={tech} alt={tech.toString()} />
                 )}
               </div>
               <div>

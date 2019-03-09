@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from "./components/navbar";
-import Footer from "./components/footer";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Main from "./components/main";
@@ -31,7 +30,6 @@ class App extends Component {
           )} />
             
           </div>
-          <Footer />
         </div>
     );
   }

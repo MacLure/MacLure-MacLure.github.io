@@ -32,6 +32,21 @@ body {
   transition: background-color 0.2s;
 }
 
+.footerLinkDiv {
+  display: inline-block;
+  margin: 0 20px 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.footerLinkDiv:hover {
+  background-color: white;
+  transition: opacity 0.2s;
+}
 
 
 .fade-enter {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Footer from "./footer";
 
 class About extends Component {
   state = {  }
@@ -14,6 +15,7 @@ class About extends Component {
         <br /><br />
         Send me a message and let's connect!
         </div>
+        <Footer color={bgColor}/>
       </div>
     );
   }
@@ -23,6 +25,7 @@ export default About;
 
 
 const styles = {}
+const bgColor = 'rgb(180,180,230'
 
 styles.fill={
   position: 'absolute',

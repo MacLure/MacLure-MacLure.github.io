@@ -3,19 +3,42 @@ import email from './../assets/icons/email.svg';
 import linkedin from './../assets/icons/linkedin.svg';
 import github from './../assets/icons/github.svg';
 import codepen from './../assets/icons/codepen.svg';
+import { relative } from 'path';
 
 
 class Footer extends Component {
-  state = {  }
+  state = { 
+    socialLinks: [
+      {
+        name: email,
+        url: '',
+      },
+      {
+        name: linkedin,
+        url: '',
+      },
+      {
+        name: github,
+        url: '',
+      },
+      {
+        name: codepen,
+        url: '',
+      },
+    ]
+   }
   render() { 
+  const bgColor = this.props.color
+
     return ( 
       <div style={styles.footer}>
-        <div style={styles.footerCopyright}>© Malcolm MacLure</div>
-        <div style={styles.footerLinks}>
-          <img style={styles.footerLink} src={email} />
-          <img style={styles.footerLink} src={linkedin} />
-          <img style={styles.footerLink} src={github} />
-          <img style={styles.footerLink} src={codepen} />
+        <div style={{backgroundColor: bgColor, paddingTop: '15px'}}>
+          <div style={styles.footerCopyright}>© Malcolm MacLure</div>
+          <div style={styles.footerLinks}>
+            {this.state.socialLinks.map(link =>
+              <div className="footerLinkDiv"><img style={styles.footerLink} src={link.name} /></div>
+            )}
+          </div>
         </div>
       </div> );
   }
@@ -24,19 +47,18 @@ class Footer extends Component {
 export default Footer;
 
   const styles={}
-
   styles.footer={
     margin: 0,
     width: "100vw",
     position: 'fixed',
     bottom: 0,
-    zIndex: 10
+    zIndex: 10,
 }
 
   styles.footerCopyright = {
-    display: "inline-block",
     position: 'absolute',
-    margin: '10px',
+    margin: '2px 0 0 20px',
+    Bottom: '30px',
     color: "rgba(0, 0, 0, 0.4)",
     fontWeight: 400,
   }
@@ -47,6 +69,7 @@ export default Footer;
   }
 
   styles.footerLink = {
-    margin: '0 20px 10px',
+    position: 'relative',
+    top: '7px',
     width: '25px'
   }
