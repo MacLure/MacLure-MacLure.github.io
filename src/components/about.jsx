@@ -28,7 +28,7 @@ styles.fill={
   position: 'absolute',
   backgroundColor: 'rgb(180,180,230',
   width: '100vw',
-  height: '100vh',
+  minHeight: '100vh',
 }
 
 styles.aboutParagraphs={
