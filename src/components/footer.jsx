@@ -10,11 +10,13 @@ class Footer extends Component {
   render() { 
     return ( 
       <div style={styles.footer}>
-      <img className="projectTechIcon" src={email} />
-      <img className="projectTechIcon" src={linkedin} />
-      <img className="projectTechIcon" src={github} />
-      <img className="projectTechIcon" src={codepen} />
-
+        <div style={styles.footerCopyright}>© Malcolm MacLure</div>
+        <div style={styles.footerLinks}>
+          <img style={styles.footerLink} src={email} />
+          <img style={styles.footerLink} src={linkedin} />
+          <img style={styles.footerLink} src={github} />
+          <img style={styles.footerLink} src={codepen} />
+        </div>
       </div> );
   }
 }
@@ -30,3 +32,21 @@ export default Footer;
     bottom: 0,
     zIndex: 10
 }
+
+  styles.footerCopyright = {
+    display: "inline-block",
+    position: 'absolute',
+    margin: '10px',
+    color: "rgba(0, 0, 0, 0.4)",
+    fontWeight: 400,
+  }
+
+  styles.footerLinks = {
+    width: "100vw",
+    textAlign: 'right',
+  }
+
+  styles.footerLink = {
+    margin: '0 20px 10px',
+    width: '25px'
+  }

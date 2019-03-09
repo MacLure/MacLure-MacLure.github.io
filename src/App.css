@@ -44,8 +44,8 @@ font-size: 3em;
 .projectLink:hover{
   background-color: black;
   transition: background-color 0.2s;
-
 }
+
 
 .fade-enter {
   opacity: 0.01;
