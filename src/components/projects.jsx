@@ -45,7 +45,7 @@ class Projects extends Component {
   render() { 
     return (
       <div style={styles.fill}>
-        <div style={styles.projectsContainer}>
+        <div className="projectsContainer">
           {this.state.projects.map(project => <Project key={project.name}project={project} /> )}
         </div>
         <Footer color={bgColor}/>
@@ -64,8 +64,4 @@ styles.fill={
   backgroundColor: 'rgb(240,190, 160)',
   width: '100vw',
   minHeight: '100vh',
-}
-
-styles.projectsContainer = {
-  margin: '130px 15vw 70px 15vw'
 }

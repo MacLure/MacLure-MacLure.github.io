@@ -101,20 +101,92 @@ li {
 
 .footerLinks {
   width: 100vw;
+  height: 100%;
   text-align: right;
 }
+
+/* */
+
+.aboutParagraphs {
+  position: absolute;
+  margin: 130px 0 0 20vw;
+  max-width: 500px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  letter-spacing: 0.0em;
+}
+
+.nautilus {
+  position: absolute;
+  margin: 60px auto;
+  top: 15vh;
+  right: 10vw;
+  width: 500px;
+  filter: grayscale(100%);
+  transform: rotate(-90deg);
+}        
+
+/* */
+
+.projectsContainer {
+  margin: 130px 15vw 70px 15vw;
+}
+
+.projectGrid {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.screenCapCell {
+  text-align: center;
+  overflow: hidden;
+}
+
+.descriptionCell {
+  padding: 10px 10px 10px 20px;
+}
+.projectName2 {
+  font-size: 2em;
+}
+.projectDescription2 {
+  font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.4);
+}
+.projectName1,.projectDescription1 {
+  display: none;
+}
+.projectSummary {
+  margin: 5px 0 0 0;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  letter-spacing: 0.0em;
+}
+.projectTechIcon {
+  width: 25px;
+  margin: 10px 5px 10px 5px;
+}
+.projectTechIconWide {
+  width: 70px;
+  margin: 10px 5px;
+}
+
 
 @media only screen and (max-width: 432px) {
   .footerCopyright {
     margin: 5px;
     bottom: 0;
+    font-size: 0.8em;
   }
   .footerLinks {
-    margin: 0 auto 10px auto;
+    margin: 0 auto;
     width: 90vw;
+    transform: translateY(-5px);
     display: flex;
     justify-content: space-between;
   }
+/* */
 
   .mainHeader {
     top: 20vh;
@@ -128,12 +200,66 @@ li {
     color: rgba(0, 0, 0, 0.4);
   }
   .gramophone {
-    top: 40vh;
-    right: 15vw;
-    width: 250px;
+    top: 35vh;
+    right: 8vw;
+    width: 300px;
+  }
+/* */
+
+  .aboutParagraphs {
+    margin: 100px 10vw 0 10vw;
+    max-width: 500px;
+    font-size: 1em;  
+    z-index: 100;
+  }
+  .nautilus {
+    display: none;
+  }
+  /* */
+
+  .projectsContainer {
+    margin: 100px 5vw 70px 5vw;
+  }
+  .projectGrid {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+  .projectName2,.projectDescription2 {
+    display: none;
+  }
+  .projectName1 {
+    display: block;
+    text-align: left;
+    font-size: 2em;
+  }
+  .projectDescription1 {
+    display: block;
+    text-align: left;
+    font-size: 1em;
+    color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 10px;
+  }
+  .descriptionCell {
+    padding: 0;
+  }
+  .projectSummary {
+    margin: 5px 0 0 0;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.0em;
+  }
+  .projectTechIcon {
+    width: 20px;
+    margin: 10px 5px 10px 5px;
+  }
+  .projectTechIconWide {
+    width: 55px;
+    margin: 10px 5px;
   }
 }
-
 
 .projectLink{
   display: inline-block;
