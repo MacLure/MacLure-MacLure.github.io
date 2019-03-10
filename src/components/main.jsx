@@ -9,11 +9,11 @@ class Main extends Component {
   render() { 
     return (
       <div style={styles.fill}>
-        <div style={styles.mainHeader}>
-          <div style={styles.name} >Malcolm MacLure</div>
-          <div style={styles.title} >Full-Stack Web Developer</div>
+        <div className="mainHeader">
+          <div className="mainName" >Malcolm MacLure</div>
+          <div className="mainTitle" >Full-Stack Web Developer</div>
         </div>
-        <img style={styles.gramophone} src={gramophoneCutout} alt="gramophone"/>
+        <img className="gramophone" src={gramophoneCutout} alt="gramophone"/>
         <Footer color={bgColor}/>
       </div> );
   }
@@ -30,26 +30,3 @@ styles.fill={
   width: '100vw',
   minHeight: '100vh',
 }
-
-styles.name = {
-  fontSize: '3em',
-  }
-
-styles.title = {
-  fontSize: '2.05em',
-  color: 'rgba(0, 0, 0, 0.4)'
-}
-
-styles.mainHeader = {
-  position: 'absolute',
-  top: '25vh',
-  left: '15vw',}
-
-styles.gramophone = {
-  position: 'absolute',
-  top: '15vh',
-  right: '15vw',
-  width: '500px',
-  filter: 'grayscale(100%)'
-}
-        
