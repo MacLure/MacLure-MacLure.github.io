@@ -1,32 +1,17 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  /* background-color: rgb(35, 35, 41); */
+}
+
 a {
   color: rgba(0, 0, 0, 0.4);
   transition: 0.2s;
   text-decoration: none;
 }
+
 a:hover {
   color: rgba(255, 255, 255, 0.7);
-  transition: 0.2s;
-}
-
-.homeIcon {
-  width: 40px;
-  transform: scaleX(-1);
-    fill: rgba(0, 0, 0, 0.4);
-    transition: 0.2s;
-    z-index: 100;
-}
-.homeIcon:hover {
-    fill: rgba(0, 0, 0, 1);
-    transition: 0.2s;
-}
-
-.navLink {
-  color: rgba(0, 0, 0, 0.4);
-  transition: 0.2s;
-  text-decoration: none;
-}
-.navLink:hover {
-  color: rgba(0, 0, 0, 1);
   transition: 0.2s;
 }
 
@@ -36,10 +21,44 @@ li {
   cursor:pointer;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  /* background-color: rgb(35, 35, 41); */
+.homeIcon {
+  width: 40px;
+  transform: scaleX(-1);
+  fill: rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  z-index: 100;
+}
+
+.homeIcon:hover {
+  fill: rgba(0, 0, 0, 1);
+  transition: 0.2s;
+}
+
+.navLink {
+  color: rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: rgba(0, 0, 0, 1);
+  transition: 0.2s;
+}
+
+.codePenIcon,.emailIcon,.gitHubIcon,.linkedInIcon {
+  position: relative;
+  right: 10px;
+  width: 30px;
+  margin: 15px;
+  fill: rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.codePenIcon:hover,.emailIcon:hover,.gitHubIcon:hover,.linkedInIcon:hover {
+  fill: rgba(0, 0, 0, 1);
+  transition: 0.2s;
 }
 
 .projectLink{
@@ -51,76 +70,32 @@ body {
   cursor: pointer;
   transition: background-color 0.2s;
 }
+
 .projectLink:hover{
   background-color: black;
   transition: background-color 0.2s;
 }
 
-.footerLinkDiv {
-  display: inline-block;
-  margin: 0 20px 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  background-color: transparent;
-  transition: background-color 0.3s;
-}
 
-.footerLinkDiv:hover {
-  background-color: white;
-  transition: background-color 0.3s;
-}
+
+
+
 
 
 .fade-enter {
   opacity: 0.01;
 }
+
 .fade-enter-active {
   opacity: 1;
   transition: all 500ms ease-out;
 }
+
 .fade-exit {
   opacity: 1;
 }
+
 .fade-exit-active {
   opacity: 0.01;
   transition: all 500ms ease-out;
 }
-
-
-
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

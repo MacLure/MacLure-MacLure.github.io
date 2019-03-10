@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink} from 'react-router-dom';
-import { isAbsolute } from 'path';
-import Gramophone from './gramophone'
+import Gramophone from './icons/gramophone'
 
 class NavBar extends Component {
   state = {  }
@@ -23,7 +22,9 @@ const styles = {}
 
 styles.nav={
   margin: 0,
-  position: 'relative',
+  position: 'fixed',
+  top: 0,
+  width: '100vw',
   zIndex: 10
 }
 
@@ -38,7 +39,7 @@ styles.ul= {
   right: '20px',
   top: '20px',
   margin: 0,
-  fontSize: '1.5em'
+  fontSize: '1.5em',
 }
 
 styles.li= {

@@ -1,29 +1,13 @@
 import React, { Component } from 'react';
-import email from './../assets/icons/email.svg';
-import linkedin from './../assets/icons/linkedin.svg';
-import github from './../assets/icons/github.svg';
-import codepen from './../assets/icons/codepen.svg';
+
+import Email from './icons/email'
+import LinkedIn from './icons/linkedIn'
+import GitHub from './icons/gitHub'
+import CodePen from './icons/codePen'
 
 class Footer extends Component {
   state = { 
-    socialLinks: [
-      {
-        name: email,
-        url: 'mailto:malcolm.maclure@gmail.com',
-      },
-      {
-        name: linkedin,
-        url: 'https://www.linkedin.com/in/malcolmmaclure/',
-      },
-      {
-        name: github,
-        url: 'https://github.com/MacLure/',
-      },
-      {
-        name: codepen,
-        url: 'https://codepen.io/MacLure/',
-      },
-    ]
+
    }
   render() { 
   const bgColor = this.props.color
@@ -33,9 +17,10 @@ class Footer extends Component {
         <div style={{backgroundColor: bgColor, paddingTop: '15px'}}>
           <div style={styles.footerCopyright}>© Malcolm MacLure</div>
           <div style={styles.footerLinks}>
-            {this.state.socialLinks.map(link =>
-              <a key={link.name} href={link.url} target={link.name !== email ? 'blank' : ''}><div className="footerLinkDiv"><img style={styles.footerLink} src={link.name} alt={link.name} /></div></a>
-            )}
+            <a href="mailto:malcolm.maclure@gmail.com"><Email /></a>
+            <a target="blank" href="https://github.com/MacLure/"><GitHub /></a>
+            <a target="blank" href="https://www.linkedin.com/in/malcolmmaclure/"><LinkedIn /></a>
+            <a target="blank" href="https://codepen.io/MacLure/"><CodePen /></a>
           </div>
         </div>
       </div> );
