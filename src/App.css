@@ -119,7 +119,7 @@ li {
 
 .aboutParagraphs {
   position: absolute;
-  margin: 130px 0 0 20vw;
+  margin: 130px 0 130px 20vw;
   max-width: 500px;
   font-size: 1.2em;
   line-height: 1.4em;
@@ -232,14 +232,21 @@ li {
 /* */
 
   .aboutParagraphs {
-    margin: 100px 10vw 0 10vw;
+    position: static;
+    margin: 100px 10vw 100px 10vw;
     max-width: 500px;
     font-size: 1em;  
     z-index: 100;
   }
   .nautilus {
-    display: none;
-  }
+    display: block;
+    position: relative;
+    top: -55px;
+    right: 0;
+    width: 20vh;
+    filter: grayscale(100%);
+    transform: rotate(-90deg);
+  }  
   /* */
 
   .projectsContainer {
@@ -284,6 +291,44 @@ li {
     margin: 10px 5px;
   }
 }
+
+
+
+
+
+
+
+@media only screen and (max-width: 355px) {
+  .aboutParagraphs {
+    position: static;
+    margin: 100px 10vw 100px 10vw;
+    max-width: 500px;
+    font-size: 0.85em;  
+    z-index: 100;
+  }
+}
+
+
+
+@media only screen and (max-height: 730px) {
+  .nautilus {
+    display: none;
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .projectLink{
   display: inline-block;
