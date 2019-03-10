@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Footer from "./footer";
 
+import nautilusCutout from './../assets/images/nautilusCutout.png';
+
 class About extends Component {
   state = {  }
   render() { 
@@ -15,6 +17,7 @@ class About extends Component {
         <br /><br />
         <a href="mailto:malcolm.maclure@gmail.com">Send me a message and let's connect!</a>
         </div>
+        <img style={styles.nautilus} src={nautilusCutout} alt="nautilus"/>
         <Footer color={bgColor}/>
       </div>
     );
@@ -35,6 +38,8 @@ styles.fill={
 }
 
 styles.aboutParagraphs={
+  position: 'absolute',
+  left: '20vw',
   margin: '130px auto',
   maxWidth: "500px",
   fontSize: '1.2em',
@@ -45,3 +50,14 @@ styles.aboutParagraphs={
 styles.emphasis = {
   color: 'rgba(0, 0, 0, 0.4)'
 }
+
+styles.nautilus = {
+  position: 'absolute',
+  margin: '60px auto',
+  top: '15vh',
+  right: '10vw',
+  width: '500px',
+  filter: 'grayscale(100%)',
+  transform: 'rotate(-90deg)'
+}
+        

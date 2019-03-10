@@ -14,7 +14,7 @@ class Footer extends Component {
 
     return ( 
       <div style={styles.footer}>
-        <div style={{backgroundColor: bgColor, paddingTop: '15px'}}>
+        <div style={{backgroundColor: bgColor}}>
           <div style={styles.footerCopyright}>© Malcolm MacLure</div>
           <div style={styles.footerLinks}>
             <a href="mailto:malcolm.maclure@gmail.com"><Email /></a>
@@ -40,8 +40,8 @@ export default Footer;
 
   styles.footerCopyright = {
     position: 'absolute',
-    margin: '6px 0 0 20px',
-    Bottom: '30px',
+    margin: '6px 0 0 25px',
+    bottom: '25px',
     color: "rgba(0, 0, 0, 0.4)",
     fontWeight: 400,
   }
