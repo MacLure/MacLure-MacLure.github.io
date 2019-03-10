@@ -67,5 +67,5 @@ styles.fill={
 }
 
 styles.projectsContainer = {
-  margin: '90px 30px 70px 30px'
+  margin: '130px 15vw 70px 15vw'
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from "./footer";
-
+import gramophoneCutout from './../assets/images/gramophoneCutout.png';
+import { isAbsolute } from 'path';
 
 class Main extends Component {
   state = { 
@@ -13,6 +14,7 @@ class Main extends Component {
           <div style={styles.name} >Malcolm MacLure</div>
           <div style={styles.title} >Full-Stack Web Developer</div>
         </div>
+        <img style={styles.gramophone} src={gramophoneCutout} />
         <Footer color={bgColor}/>
       </div> );
   }
@@ -40,5 +42,15 @@ styles.title = {
 }
 
 styles.mainHeader = {
-  margin: '50px'
+  position: 'absolute',
+  top: '25vh',
+  left: '15vw',}
+
+styles.gramophone = {
+  position: 'absolute',
+  top: '15vh',
+  right: '15vw',
+  width: '500px',
+  filter: 'grayscale(100%)'
 }
+        

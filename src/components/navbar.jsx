@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import { NavLink} from 'react-router-dom';
+import { isAbsolute } from 'path';
+import Gramophone from './gramophone'
 
 class NavBar extends Component {
   state = {  }
   render() { 
     return (
       <div style={styles.nav}>
+      <NavLink style={styles.homeLink} to="/" ><Gramophone /></NavLink>
         <ul style={styles.ul}>
-        <li style={styles.li}><NavLink to="/" className="navLink">Home</NavLink></li>
         <li style={styles.li}><NavLink to="/about" className="navLink">About</NavLink></li>
         <li style={styles.li}><NavLink to="/projects" className="navLink">Projects</NavLink></li>
         </ul>
@@ -23,6 +25,12 @@ styles.nav={
   margin: 0,
   position: 'relative',
   zIndex: 10
+}
+
+styles.homeLink = {
+  position: 'absolute',
+  top: '20px',
+  left: '20px'
 }
 
 styles.ul= {
