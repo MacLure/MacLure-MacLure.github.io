@@ -7,6 +7,7 @@ class Project extends Component {
     const {name, desc, summary, tech, liveURL, gitHubURL, screenCap} = this.props.project
 
     return ( 
+      <div>
         <div className="projectGrid">
           <div className="screenCapCell">
             <div className="projectName1">{name}</div>
@@ -28,6 +29,8 @@ class Project extends Component {
             </div>
           </div>
         </div>
+        <div style={styles.divider}></div>
+      </div>
      );
   }
 }
@@ -40,3 +43,9 @@ styles.screencap = {
   width: '100%',
 }
 
+styles.divider = {
+  width: '100%',
+  height: '2px',
+  backgroundColor: 'rgba(0,0,0,0.4)',
+  marginBottom: '10px',
+}

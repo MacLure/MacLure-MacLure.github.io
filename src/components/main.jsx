@@ -25,7 +25,7 @@ const styles = {}
 const bgColor = 'rgb(180,250,180'
 
 styles.fill={
-  position: 'absolute',
+  position: 'relative',
   backgroundColor: bgColor,
   width: '100vw',
   minHeight: '100vh',
