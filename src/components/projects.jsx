@@ -48,7 +48,7 @@ class Projects extends Component {
       <div style={styles.fill}>
       <NavBar color={bgColor} />
         <div className="projectsContainer">
-          {this.state.projects.map(project => <Project key={project.name}project={project} /> )}
+          {this.state.projects.map(project => <Project key={project.name}project={project} bgColor = {bgColor}/> )}
         </div>
         <Footer color={bgColor}/>
       </div>

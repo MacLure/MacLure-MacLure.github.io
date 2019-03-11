@@ -28,8 +28,8 @@ class Project extends Component {
                 )}
               </div>
               <div className="projectLinks">
-                <a href={liveURL} target="blank"><div className="projectLink">visit site</div></a>
-                <a href={gitHubURL} target="blank"><div className="projectLink">view code</div></a>
+                <a href={liveURL} target="blank"><div className="projectLink" style={{color: this.props.bgColor}}>visit site</div></a>
+                <a href={gitHubURL} target="blank"><div className="projectLink" style={{color: this.props.bgColor}}>view code</div></a>
             </div>
           </div>
         </div>
