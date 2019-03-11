@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import rails from './../assets/icons/rails.svg';
+import { relative } from 'path';
 
 class Project extends Component {
   
@@ -12,7 +13,10 @@ class Project extends Component {
           <div className="screenCapCell">
             <div className="projectName1">{name}</div>
             <div className="projectDescription1">{desc}</div>
-            <img style={styles.screencap} src={screenCap} alt={name} />
+            <div className="screencapContainer">
+              <div style={styles.vignette}></div>
+              <img style={styles.screencap} src={screenCap} alt={name} />
+            </div>
           </div>
           <div className="descriptionCell">
             <div className="projectName2">{name}</div>
@@ -40,7 +44,18 @@ export default Project;
 const styles = {}
 
 styles.screencap = {
+  position: 'absolute',
+  left: 0,
   width: '100%',
+  zIndex: 1,
+}
+
+styles.vignette = {
+  position: 'absolute',
+  width: '100%',
+  height: '100%',
+  zIndex: 2,
+  boxShadow: 'inset 0px 0px 85px rgba(0,0,0,1)',
 }
 
 styles.divider = {

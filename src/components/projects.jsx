@@ -12,8 +12,8 @@ import ruby from './../assets/icons/ruby.svg';
 import rails from './../assets/icons/rails.svg';
 import postgres from './../assets/icons/postgres.svg';
 
-import horizonScreenCap from './../assets/images/horizon_screencap.png';
-import reserveItScreenCap from './../assets/images/reserveIt_screencap.png';
+import horizonScreenCap from './../assets/images/horizonScreencap.png';
+import reserveItScreenCap from './../assets/images/reserveItScreencap.png';
 
 
 
