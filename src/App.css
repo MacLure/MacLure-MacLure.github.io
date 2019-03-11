@@ -1,7 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 900;
-  /* background-color: rgb(35, 35, 41); */
 }
 
 a {
@@ -61,6 +60,9 @@ li {
   transition: 0.2s;
 }
 
+.linkedInIcon {
+  transform: translateY(3.5px);
+}
 
 
 
@@ -334,7 +336,9 @@ li {
     width: 55px;
     margin: 10px 5px;
   }
-
+  .linkedInIcon {
+    transform: translateY(-3.5px);
+  }
 
 }
 

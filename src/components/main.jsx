@@ -15,7 +15,8 @@ class Main extends Component {
         </div>
         <img className="gramophone" src={gramophoneCutout} alt="gramophone"/>
         <Footer color={bgColor}/>
-      </div> );
+      </div>
+    );
   }
 }
  
@@ -26,7 +27,7 @@ const bgColor = 'rgb(180,250,180'
 
 styles.fill={
   position: 'relative',
-  backgroundColor: bgColor,
+  backgroundColor: 'rgb(180,250,180',
   width: '100vw',
   minHeight: '100vh',
 }
