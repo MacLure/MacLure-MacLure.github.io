@@ -411,7 +411,7 @@ li {
 .projectLink{
   display: inline-block;
   margin: 5px 15px 5px 5px;
-  padding: 5px;
+  padding: 5px 10px;
   background-color: rgba(0,0,0,0.4);
   color: white;
   cursor: pointer;
