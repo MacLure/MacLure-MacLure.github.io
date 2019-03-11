@@ -59,11 +59,11 @@ class Projects extends Component {
 export default Projects;
 
 const styles = {}
-const bgColor = 'rgb(240,190, 160)'
+const bgColor ='rgb(160,190, 240)'
 
 styles.fill={
   position: 'absolute',
-  backgroundColor: 'rgb(240,190, 160)',
+  backgroundColor: 'rgb(160,190, 240)',
   width: '100vw',
   minHeight: '100vh',
 }

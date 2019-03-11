@@ -203,11 +203,7 @@ li {
     margin: 130px auto;
   }
   .nautilus {
-    top: auto;
-    bottom: 10vh;
-    right: 50%;
-    width: 400px;
-    transform: rotate(-90deg) translateY(200px);
+    display: none
   }  
 
 
