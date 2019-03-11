@@ -32,7 +32,7 @@ class Projects extends Component {
       {
         name: "Reserve-It",
         desc: "Restaurant booking app",
-        summary: "Reserve-It lets users make reservations at restaurants, and restaurant owners to keep track of their reservations. The app was built with responsiveness in mind, so it is easy to use for mobile, tablet, and desktop/laptop users.",
+        summary: "Reserve-It lets users make reservations at restaurants, and restaurant owners to register their restaurants and keep track of their reservations.",
         tech: [html5, css3, js, sass, ruby, rails, postgres],
         screenCap: reserveItScreenCap,
         liveURL: 'https://project-reserve-it.herokuapp.com/',

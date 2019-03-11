@@ -143,18 +143,21 @@ li {
 /* */
 
 .projectsContainer {
-  margin: 130px 15vw 70px 15vw;
+  margin: 130px 10vw 70px 10vw;
 }
 
 .projectGrid {
   margin-bottom: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .screenCapCell {
   text-align: center;
   height: 300px;
+  max-height: 263px;
+
 }
 .screencapContainer {
   position: relative;
@@ -163,6 +166,7 @@ li {
   overflow: hidden;
 }
 .descriptionCell {
+  position: relative;
   padding: 10px 10px 10px 20px;
 }
 .projectName2 {
@@ -232,13 +236,29 @@ li {
     filter: grayscale(100%);
   }
 /* */
-
+.projectSummary {
+  margin: 5px 0 0 0;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.2em;
+  letter-spacing: 0.0em;
+}
+.projectTechIcon {
+  width: 20px;
+  margin: 10px 5px 10px 5px;
+}
+.projectTechIconWide {
+  width: 55px;
+  margin: 10px 5px;
+}
 
 }
 
-
-
-
+@media only screen and (max-width: 900px) {
+  .projectsContainer {
+    margin: 130px 2vw 70px 2vw;
+  }
+}
 
 
 
@@ -296,12 +316,24 @@ li {
   /* */
 
   .projectsContainer {
-    margin: 100px 5vw 70px 5vw;
+    margin: 100px 10vw 70px 10vw;
   }
   .projectGrid {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
+  }
+  .screenCapCell {
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+  }
+  .screencapContainer {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    overflow: hidden;
   }
   .projectName2,.projectDescription2 {
     display: none;
@@ -320,6 +352,7 @@ li {
   }
   .descriptionCell {
     padding: 0;
+    height: 175px;
   }
   .projectSummary {
     margin: 5px 0 0 0;
@@ -329,11 +362,11 @@ li {
     letter-spacing: 0.0em;
   }
   .projectTechIcon {
-    width: 20px;
+    width: 18px;
     margin: 10px 5px 10px 5px;
   }
   .projectTechIconWide {
-    width: 55px;
+    width: 45px;
     margin: 10px 5px;
   }
   .linkedInIcon {
@@ -371,7 +404,10 @@ li {
 
 
 
-
+.projectLinks {
+  position: absolute;
+  bottom: 0;
+}
 .projectLink{
   display: inline-block;
   margin: 5px 15px 5px 5px;

@@ -27,7 +27,7 @@ class Project extends Component {
                   <img key={tech} className={tech !== rails ? "projectTechIcon" : "projectTechIconWide"} src={tech} alt={tech.toString()} />
                 )}
               </div>
-              <div>
+              <div className="projectLinks">
                 <a href={liveURL} target="blank"><div className="projectLink">visit site</div></a>
                 <a href={gitHubURL} target="blank"><div className="projectLink">view code</div></a>
             </div>
