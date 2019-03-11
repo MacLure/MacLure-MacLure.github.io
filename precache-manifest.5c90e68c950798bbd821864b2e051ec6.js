@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/postgres.2e9f8d23.svg"
   },
   {
-    "revision": "a4eadadbd72fa851aeba",
-    "url": "/static/css/main.71ecc1f4.chunk.css"
+    "revision": "1f7876100c93083057ac",
+    "url": "/static/css/main.c5ecdcbe.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
@@ -36,8 +36,8 @@ self.__precacheManifest = [
     "url": "/static/media/ruby.39d8ea45.svg"
   },
   {
-    "revision": "a4eadadbd72fa851aeba",
-    "url": "/static/js/main.7182291c.chunk.js"
+    "revision": "1f7876100c93083057ac",
+    "url": "/static/js/main.bbc9f0ce.chunk.js"
   },
   {
     "revision": "d3d8935c765f3d08d0ed1212b35bb8ea",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/static/media/gramophoneCutout.4a7a91af.png"
   },
   {
-    "revision": "317c013fce4fc2e9cf72afbfbd040890",
+    "revision": "113396d49d6d311eed5f8ed4e140bcab",
     "url": "/index.html"
   }
 ];
