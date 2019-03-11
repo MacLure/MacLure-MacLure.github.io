@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Footer from "./footer";
 import gramophoneCutout from './../assets/images/gramophoneCutout.png';
-import { isAbsolute } from 'path';
+import NavBar from "./navbar";
 
 class Main extends Component {
   state = { 
@@ -10,6 +10,7 @@ class Main extends Component {
   render() { 
     return (
       <div style={styles.fill}>
+      <NavBar color={bgColor} />
       <div className="mainHeader">
       <div className="mainName" >Malcolm MacLure</div>
       <div className="mainTitle" >Full-Stack Web Developer</div>

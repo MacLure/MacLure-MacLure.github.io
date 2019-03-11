@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Footer from "./footer";
+import NavBar from "./navbar";
 
 import nautilusCutout from './../assets/images/nautilusCutout.png';
 
@@ -8,6 +9,8 @@ class About extends Component {
   render() { 
     return (
       <div style={styles.fill}>
+      <NavBar color={bgColor} />
+
         <div className="aboutGrid">
           <div className="aboutParagraphs">
             I'm a full-stack web developer with a background in international recruitment and project management. I love coding and building things with technology.

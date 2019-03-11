@@ -5,13 +5,15 @@ import Gramophone from './icons/gramophone'
 class NavBar extends Component {
   state = {  }
   render() { 
+    const bgColor = this.props.color
     return (
       <div style={styles.nav}>
-      <NavLink style={styles.homeLink} to="/" ><Gramophone /></NavLink>
-        <ul style={styles.ul}>
-        <li style={styles.li}><NavLink to="/about" className="navLink">About</NavLink></li>
-        <li style={styles.li}><NavLink to="/projects" className="navLink">Projects</NavLink></li>
-        </ul>
+        <div style={{backgroundColor: bgColor, height: '70px' }}></div>
+          <NavLink style={styles.homeLink} to="/" ><Gramophone /></NavLink>
+          <ul style={styles.ul}>
+            <li style={styles.li}><NavLink to="/about" className="navLink">About</NavLink></li>
+            <li style={styles.li}><NavLink to="/projects" className="navLink">Projects</NavLink></li>
+          </ul>
       </div> );
   }
 }
@@ -30,14 +32,14 @@ styles.nav={
 
 styles.homeLink = {
   position: 'absolute',
-  top: '20px',
+  top: '10px',
   left: '20px'
 }
 
 styles.ul= {
   position: 'absolute',
-  right: '20px',
-  top: '20px',
+  right: '10px',
+  top: '10px',
   margin: 0,
   fontSize: '1.5em',
 }

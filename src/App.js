@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import NavBar from "./components/navbar";
 import About from "./components/about";
 import Projects from "./components/projects";
 import Main from "./components/main";
@@ -11,7 +10,7 @@ class App extends Component {
   render() {
     return (
         <div style={styles.app}>
-          <NavBar />
+        
           <div>
           <Route render={({location}) =>(
             <TransitionGroup>

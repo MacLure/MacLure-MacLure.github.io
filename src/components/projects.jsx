@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Project from './project'
 import Footer from "./footer";
+import NavBar from "./navbar";
 
 import html5 from './../assets/icons/html5.svg';
 import css3 from './../assets/icons/css3.svg';
@@ -45,6 +46,7 @@ class Projects extends Component {
   render() { 
     return (
       <div style={styles.fill}>
+      <NavBar color={bgColor} />
         <div className="projectsContainer">
           {this.state.projects.map(project => <Project key={project.name}project={project} /> )}
         </div>
