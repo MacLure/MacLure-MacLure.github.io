@@ -22,6 +22,7 @@ class Projects extends Component {
   state = { 
     projects: [
       {
+        number: 1,
         name: "Horizon",
         desc: "School admin and student portal",
         summary: "Horizon is a management tool for schools and students. It features different dashboards for two user types.",
@@ -31,6 +32,7 @@ class Projects extends Component {
         gitHubURL: 'https://github.com/MacLure/project-horizon-react',
       },
       {
+        number: 2,
         name: "Reserve-It",
         desc: "Restaurant booking app",
         summary: "Reserve-It lets users make reservations at restaurants, and restaurant owners to register their restaurants and keep track of their reservations.",
@@ -48,7 +50,7 @@ class Projects extends Component {
       <div style={styles.fill}>
       <NavBar color={bgColor} />
         <div className="projectsContainer">
-          {this.state.projects.map(project => <Project key={project.name}project={project} bgColor = {bgColor}/> )}
+          {this.state.projects.map(project => <Project key={project.number}project={project} bgColor = {bgColor}/> )}
         </div>
         <Footer color={bgColor}/>
       </div>
@@ -59,11 +61,11 @@ class Projects extends Component {
 export default Projects;
 
 const styles = {}
-const bgColor ='rgb(160,190, 240)'
+const bgColor ='rgb(240,200, 180)'
 
 styles.fill={
   position: 'absolute',
-  backgroundColor: 'rgb(160,190, 240)',
+  backgroundColor: 'rgb(240,200, 180)',
   width: '100vw',
   minHeight: '100vh',
 }

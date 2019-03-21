@@ -5,21 +5,21 @@ import { relative } from 'path';
 class Project extends Component {
   
   render() { 
-    const {name, desc, summary, tech, liveURL, gitHubURL, screenCap} = this.props.project
+    const {number, name, desc, summary, tech, liveURL, gitHubURL, screenCap} = this.props.project
 
     return ( 
       <div>
         <div className="projectGrid">
           <div className="screenCapCell">
-            <div className="projectName1">{name}</div>
+          <div className="projectName1"><a className="projectTitleLink" href={liveURL} target="blank">{name}</a></div>
             <div className="projectDescription1">{desc}</div>
-            <div className="screencapContainer">
+            <a href={liveURL} target="blank"><div className="screencapContainer">
               <div style={styles.vignette}></div>
               <img style={styles.screencap} src={screenCap} alt={name} />
-            </div>
+            </div></a>
           </div>
           <div className="descriptionCell">
-            <div className="projectName2">{name}</div>
+          <div className="projectName2"><a className="projectTitleLink" href={liveURL} target="blank">{name}</a></div>
               <div className="projectDescription2">{desc}</div>
               <div className="projectSummary">{summary}</div>
               <div>
@@ -28,12 +28,11 @@ class Project extends Component {
                 )}
               </div>
               <div className="projectLinks">
-                <a href={liveURL} target="blank"><div className="projectLink" style={{color: this.props.bgColor}}>visit site</div></a>
-                <a href={gitHubURL} target="blank"><div className="projectLink" style={{color: this.props.bgColor}}>view code</div></a>
+                <a href={liveURL} target="blank"><div className="projectLink" style={{color: this.props.bgColor}}>Live site</div></a>
+                <a href={gitHubURL} target="blank"><div className="projectLink" style={{color: this.props.bgColor}}>Github repo</div></a>
             </div>
           </div>
         </div>
-        <div style={styles.divider}></div>
       </div>
      );
   }

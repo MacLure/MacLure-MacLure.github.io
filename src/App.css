@@ -147,7 +147,7 @@ li {
 }
 
 .projectGrid {
-  margin-bottom: 10px;
+  margin: 210px auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -169,8 +169,20 @@ li {
   position: relative;
   padding: 10px 10px 10px 20px;
 }
+.projectNumber {
+  font-weight: 400;
+  font-size: 0.7em;
+  color: rgba(0,0,0,0.4)
+}
 .projectName2 {
+  color: black;
   font-size: 2em;
+}
+.projectTitleLink {
+  color: black;
+}
+.projectTitleLink:hover {
+color: rgba(255, 255, 255, 0.7);
 }
 .projectDescription2 {
   font-size: 1.5em;
@@ -272,6 +284,9 @@ li {
     display: flex;
     justify-content: space-between;
   }
+  .navHomeLink {
+    display: none;
+  }
 /* */
 
   .mainHeader {
@@ -339,6 +354,7 @@ li {
     text-align: left;
     font-size: 2em;
   }
+
   .projectDescription1 {
     display: block;
     text-align: left;

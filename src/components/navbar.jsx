@@ -11,6 +11,7 @@ class NavBar extends Component {
         <div style={{backgroundColor: bgColor, height: '70px' }}></div>
           <NavLink style={styles.homeLink} to="/" ><Gramophone /></NavLink>
           <ul style={styles.ul}>
+            <li className="navHomeLink" style={styles.li}><NavLink to="/" className="navLink">Home</NavLink></li>
             <li style={styles.li}><NavLink to="/about" className="navLink">About</NavLink></li>
             <li style={styles.li}><NavLink to="/projects" className="navLink">Projects</NavLink></li>
           </ul>
