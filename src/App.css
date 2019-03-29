@@ -64,18 +64,6 @@ li {
   transform: translateY(3.5px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .footerCopyright {
   position: absolute;
   margin: 6px 0 0 25px;
@@ -89,8 +77,6 @@ li {
   height: 100%;
   text-align: right;
 }
-
-/* */
 
 .mainHeader {
   position: absolute;
@@ -114,8 +100,6 @@ li {
   width: 35vw;
   filter: grayscale(100%);
 }
-        
-/* */
 
 .aboutGrid {
   margin: 100px auto;
@@ -123,14 +107,10 @@ li {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 30vw;
-
 }
 
 .aboutParagraphs {
   position: relative;
-  /* top: 130px;
-  left: 20vw; */
-  max-width: 500px;
   font-size: 1.2em;
   line-height: 1.4em;
   letter-spacing: 0.0em;
@@ -151,18 +131,13 @@ li {
   background: radial-gradient(rgba(0,0,0,0) 70%, rgba(0,0,0,0.5));
 }
 
-.nautilus {
+.portrait {
   position: absolute;
-  /* top: 160px;
-  right: 10vw; */
-  width: 100%;
-  /* transform: rotate(-90deg) translateX(-5%); */
+  width: 300px;
   filter: grayscale(100%);
   z-index: 1;
 
 }        
-
-/* */
 
 .projectsContainer {
   margin: 130px 10vw 70px 10vw;
@@ -229,24 +204,48 @@ color: rgba(255, 255, 255, 0.7);
   margin: 10px 5px;
 }
 
-
-
-@media only screen and (max-width: 1300px) {
-  /* .aboutParagraphs {
-    position: static;
-    margin: 130px auto;
-  } */
-  /* .nautilus {
-    display: none
-  }   */
-
-
-  @media only screen and (max-height: 730px) {
-    /* .nautilus {
-      display: none;
-    }  */
-  }
+.projectLinks {
+  position: absolute;
+  bottom: 0;
 }
+.projectLink{
+  display: inline-block;
+  margin: 5px 15px 5px 5px;
+  padding: 5px 10px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.projectLink:hover{
+  background-color: black;
+  transition: background-color 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1090px) {
@@ -265,30 +264,90 @@ color: rgba(255, 255, 255, 0.7);
     transform: translateX(20vw);
     filter: grayscale(100%);
   }
-/* */
-.projectSummary {
-  margin: 5px 0 0 0;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 1.2em;
-  letter-spacing: 0.0em;
-}
-.projectTechIcon {
-  width: 20px;
-  margin: 10px 5px 10px 5px;
-}
-.projectTechIconWide {
-  width: 55px;
-  margin: 10px 5px;
-}
+
+  .projectSummary {
+    margin: 5px 0 0 0;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.0em;
+  }
+  .projectTechIcon {
+    width: 20px;
+    margin: 10px 5px 10px 5px;
+  }
+  .projectTechIconWide {
+    width: 55px;
+    margin: 10px 5px;
+  }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 900px) {
+  .aboutGrid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .aboutParagraphs {
+    grid-row-start: 2;
+    width: 100%;
+  }
+  .photoContainer {
+    text-align: center;
+  }
+  .portrait {
+    position: static;
+    grid-row-start: 1;
+    max-width: 40vw;
+  }
   .projectsContainer {
     margin: 130px 2vw 70px 2vw;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -309,7 +368,6 @@ color: rgba(255, 255, 255, 0.7);
   .navHomeLink {
     display: none;
   }
-/* */
 
   .mainHeader {
     width: 100%;
@@ -330,23 +388,6 @@ color: rgba(255, 255, 255, 0.7);
     width: 300px;
     transform: translateX(150px);
   }
-/* */
-
-  .aboutParagraphs {
-    position: static;
-    margin: 100px auto;
-    padding: 0 10vw;
-    max-width: 500px;
-    font-size: 1em;  
-    z-index: 100;
-  }
-  .nautilus {
-    display: none;
-  }  
-
-
-
-  /* */
 
   .projectsContainer {
     margin: 100px 10vw 70px 10vw;
@@ -415,47 +456,8 @@ color: rgba(255, 255, 255, 0.7);
 
 
 
-@media only screen and (max-width: 355px) {
-  .aboutParagraphs {
-    position: static;
-    margin: 85px 5vw 85px 5vw;
-    max-width: 500px;
-    font-size: 0.85em;  
-    z-index: 100;
-  }
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.projectLinks {
-  position: absolute;
-  bottom: 0;
-}
-.projectLink{
-  display: inline-block;
-  margin: 5px 15px 5px 5px;
-  padding: 5px 10px;
-  background-color: rgba(0,0,0,0.4);
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.projectLink:hover{
-  background-color: black;
-  transition: background-color 0.2s;
-}
 
 
 

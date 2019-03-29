@@ -3,8 +3,6 @@ import Footer from "./footer";
 import NavBar from "./navbar";
 import Portrait from './../assets/images/portrait.png'
 
-import nautilusCutout from './../assets/images/nautilusCutout.png';
-
 class About extends Component {
   state = {  }
   render() { 
@@ -23,8 +21,7 @@ class About extends Component {
             <a href="mailto:malcolm.maclure@gmail.com">Send me a message and let's connect!</a>
           </div>
           <div className="photoContainer">
-            <div className="vignette"></div>
-            <img className="nautilus" src={Portrait} alt="nautilus"/>
+            <img className="portrait" src={Portrait} alt="portrait of Malcolm"/>
           </div>
         </div>
         <Footer color={bgColor}/>
