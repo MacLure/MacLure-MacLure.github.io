@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Footer from "./footer";
 import NavBar from "./navbar";
+import Portrait from './../assets/images/portrait.png'
 
 import nautilusCutout from './../assets/images/nautilusCutout.png';
 
@@ -21,7 +22,7 @@ class About extends Component {
             <br /><br />
             <a href="mailto:malcolm.maclure@gmail.com">Send me a message and let's connect!</a>
           </div>
-            <img className="nautilus" src={nautilusCutout} alt="nautilus"/>
+            <img className="nautilus" src={Portrait} alt="nautilus"/>
         </div>
         <Footer color={bgColor}/>
       </div>

@@ -135,7 +135,7 @@ li {
   top: 160px;
   right: 10vw;
   width: 450px;
-  transform: rotate(-90deg) translateX(-5%);
+  /* transform: rotate(-90deg) translateX(-5%); */
   filter: grayscale(100%);
 
 }        
