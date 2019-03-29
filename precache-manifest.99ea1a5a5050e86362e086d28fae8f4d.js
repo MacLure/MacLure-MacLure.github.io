@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/static/media/postgres.2e9f8d23.svg"
   },
   {
-    "revision": "a4eadadbd72fa851aeba",
-    "url": "/static/css/main.71ecc1f4.chunk.css"
+    "revision": "0a05d582bf98a77d19c7",
+    "url": "/static/css/main.33af0eac.chunk.css"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.c5541365.js"
   },
   {
-    "revision": "f07e49ad3dbc90b42f92",
-    "url": "/static/js/2.9e9b2b15.chunk.js"
+    "revision": "90264e1e1084280ebfa6",
+    "url": "/static/js/2.97e50d44.chunk.js"
   },
   {
     "revision": "6694eb9773e1cf2d2d5b17601a911870",
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/static/media/ruby.39d8ea45.svg"
   },
   {
-    "revision": "a4eadadbd72fa851aeba",
-    "url": "/static/js/main.7182291c.chunk.js"
+    "revision": "0a05d582bf98a77d19c7",
+    "url": "/static/js/main.f962f453.chunk.js"
   },
   {
-    "revision": "d3d8935c765f3d08d0ed1212b35bb8ea",
-    "url": "/static/media/nautilusCutout.d3d8935c.png"
+    "revision": "ee96964e6c90374f7c764d71e13e5c24",
+    "url": "/static/media/portrait.ee96964e.png"
   },
   {
     "revision": "de2c16ff89280e314621029be140113d",
@@ -64,11 +64,11 @@ self.__precacheManifest = [
     "url": "/static/media/reserveItScreencap.fba50478.png"
   },
   {
-    "revision": "4a7a91af0734ce716d51db2fe2e87e4d",
-    "url": "/static/media/gramophoneCutout.4a7a91af.png"
+    "revision": "865bab1710ad50cab0f92fe759d5b32f",
+    "url": "/static/media/gramophoneCutout.865bab17.png"
   },
   {
-    "revision": "317c013fce4fc2e9cf72afbfbd040890",
+    "revision": "a5129e5f5f019ca266f40f008cb6e213",
     "url": "/index.html"
   }
 ];
