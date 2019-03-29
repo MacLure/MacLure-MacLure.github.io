@@ -22,7 +22,10 @@ class About extends Component {
             <br /><br />
             <a href="mailto:malcolm.maclure@gmail.com">Send me a message and let's connect!</a>
           </div>
+          <div className="photoContainer">
+            <div className="vignette"></div>
             <img className="nautilus" src={Portrait} alt="nautilus"/>
+          </div>
         </div>
         <Footer color={bgColor}/>
       </div>
