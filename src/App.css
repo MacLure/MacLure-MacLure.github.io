@@ -144,7 +144,7 @@ li {
 }
 
 .projectGrid {
-  margin: 210px auto;
+  margin: 80px auto 80px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
@@ -217,12 +217,17 @@ color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
 .projectLink:hover{
   background-color: black;
   transition: background-color 0.2s;
 }
-
+.projectSeperator {
+  margin: 10px auto;
+  width: 10px;
+  height: 10px;
+  background-color:rgba(0,0,0,0.4);
+  border-radius: 50%;
+}
 
 
 
