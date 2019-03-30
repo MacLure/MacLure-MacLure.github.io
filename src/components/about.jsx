@@ -21,7 +21,7 @@ class About extends Component {
             <a href="mailto:malcolm.maclure@gmail.com">Send me a message and let's connect!</a>
           </div>
           <div className="photoContainer">
-            <img className="portrait" src={Portrait} alt="portrait of Malcolm"/>
+            <img className="portrait" src={Portrait} alt="portrait of Malcolm"/>*
           </div>
         </div>
         <Footer color={bgColor}/>
