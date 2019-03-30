@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Footer from "./footer";
 import NavBar from "./navbar";
-import Portrait from './../assets/images/portrait.png'
+import Portrait from './../assets/images/portrait.jpg'
 
 class About extends Component {
   state = {  }
